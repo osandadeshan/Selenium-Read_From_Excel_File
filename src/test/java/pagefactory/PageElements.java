@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 /**
  * Created by Osanda on 10/5/2016.
  */
+
  public class PageElements {
 
     @FindBy(xpath = "//input[@name='firstName']")
@@ -57,4 +58,5 @@ import org.openqa.selenium.support.ui.Select;
         dropdown.selectByVisibleText(name);
         country.sendKeys(name);
     }
+
 }

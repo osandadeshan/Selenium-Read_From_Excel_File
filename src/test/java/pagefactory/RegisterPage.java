@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 /**
  * Created by Osanda on 10/5/2016.
  */
+
 public class RegisterPage {
 
     WebDriver driver;
@@ -66,8 +67,6 @@ public class RegisterPage {
     }
 
     public void register(String fname, String lname, String pno, String uname, String adrs1, String adrs2, String cty, String statename, String pcode, String countryName, String emailaddress, String pw, String confirmpw){
-//            PageElements element=new PageElements();
-
                 firstName.sendKeys(fname);
                 lastName.sendKeys(lname);
                 phone.sendKeys(pno);
@@ -81,9 +80,7 @@ public class RegisterPage {
                 email.sendKeys(emailaddress);
                 password.sendKeys(pw);
                 confirmPassword.sendKeys(confirmpw);
-
                 register.click();
-
-
     }
+
 }

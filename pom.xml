@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ReadFromExcelFile</groupId>
-    <artifactId>ReadFromExcelFile</artifactId>
+    <groupId>Selenium - Read_From_Excel_File</groupId>
+    <artifactId>Selenium - Read_From_Excel_File</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -18,6 +18,11 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

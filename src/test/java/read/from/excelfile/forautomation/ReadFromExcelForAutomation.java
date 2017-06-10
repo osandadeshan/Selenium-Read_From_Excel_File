@@ -1,17 +1,21 @@
 package read.from.excelfile.forautomation;
 
-        import org.junit.Test;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebDriver;
-        import  org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.support.ui.Select;
-        import lib.ExcelDataConfig;
+import org.junit.After;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import  org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import lib.ExcelDataConfig;
+
 /**
  * Created by Osanda on 10/4/2016.
  */
+
 public class ReadFromExcelForAutomation {
     WebDriver driver;
     String ROOT = System.getProperty("user.dir");
+
     @Test
     public void newToursRegister() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", ROOT + "\\src\\main\\resources\\chromedriver.exe");
@@ -36,6 +40,11 @@ public class ReadFromExcelForAutomation {
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys(excel.getData(0,dataRow,11));
         driver.findElement(By.xpath("//input[@name='confirmPassword']")).sendKeys(excel.getData(0,dataRow,12));
         driver.findElement(By.xpath("//input[@name='register']")).click();
-
     }
+
+    @After
+    public void tearDown(){
+        driver.quit();
+    }
+
 }

@@ -2,14 +2,13 @@ package com.osanda.readexcelfile;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 /**
  * Created by Osanda on 10/3/2016.
  */
+
 public class ReadExcelData {
     static String ROOT = System.getProperty("user.dir");
 
@@ -28,6 +27,7 @@ public class ReadExcelData {
             String data0=sheet1.getRow(i).getCell(0).getStringCellValue();
             System.out.println("Data from Excel is "+data0);
         }
-        fis.close();
+            fis.close();
     }
+
 }

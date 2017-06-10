@@ -8,6 +8,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 /**
  * Created by Osanda on 10/5/2016.
  */
+
 public abstract class BrowserFactory {
 
     static WebDriver driver;
